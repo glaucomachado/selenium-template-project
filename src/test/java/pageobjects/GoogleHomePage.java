@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
  * @author glauco at @date 10:53:51
  * 
  */
-public class GoogleHomePage extends BasePage {
+public class GoogleHomePage extends PageObject {
 
     private WebElement q = driver.findElement(By.name("q"));
     

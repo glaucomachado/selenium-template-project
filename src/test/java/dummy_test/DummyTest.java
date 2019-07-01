@@ -10,11 +10,11 @@ import org.testng.annotations.Test;
 
 public class DummyTest {
 
-    private static final String BASE_URL = "https://buildyourprofile.netlify.com/";
-    private static WebDriver driver;
+    private final String BASE_URL = "https://buildyourprofile.netlify.com/";
+    private WebDriver driver;
 
     @BeforeClass
-    public static void setup() {
+    public void setup() {
 	System.setProperty("webdriver.gecko.driver", "/home/glauco/opt/webdriver/geckodriver");
 	driver = new FirefoxDriver();
     }
@@ -27,9 +27,9 @@ public class DummyTest {
     }
 
     @AfterClass
-    public static void tear() {
+    public  void tear() {
 	if (driver != null) {
-	    driver.close();
+	    //this.driver.close();
 	    driver.quit();
 	}
     }
