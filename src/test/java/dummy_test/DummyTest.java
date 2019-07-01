@@ -15,7 +15,6 @@ public class DummyTest {
 
     @BeforeClass
     public static void setup() {
-	System.out.println("@BeforeClass executed");
 	System.setProperty("webdriver.gecko.driver", "/home/glauco/opt/webdriver/geckodriver");
 	driver = new FirefoxDriver();
     }

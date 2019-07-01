@@ -1,4 +1,4 @@
-package dummy_test;
+package pagetests;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,4 +1,4 @@
-package dummy_test;
+package pagetests;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
