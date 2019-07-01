@@ -29,7 +29,6 @@ public class DummyTest {
     @AfterClass
     public  void tear() {
 	if (driver != null) {
-	    //this.driver.close();
 	    driver.quit();
 	}
     }
