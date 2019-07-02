@@ -4,11 +4,12 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 /**
- * @author glauco at @date 15:06:04
+ * @author Glauco Machado
  * 
  */
 public class BaseTest {
@@ -20,7 +21,8 @@ public class BaseTest {
     public static void setUp() {
 	System.setProperty("webdriver.chrome.driver", "/home/glauco/opt/webdriver/chromedriver");
 	driver = new ChromeDriver();
-	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); // implicit
+	WebDriverWait wait = new WebDriverWait(driver, 10); // explicit
 	driver.get(BASE_URL);
     }
 

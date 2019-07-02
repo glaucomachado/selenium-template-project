@@ -3,7 +3,7 @@ package pageobjects;
 import org.openqa.selenium.WebDriver;
 
 /**
- * @author glauco at @date 15:11:00
+ * @author Glauco Machado
  * 
  */
 public class PageObject {

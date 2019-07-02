@@ -22,23 +22,21 @@
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<webdrivermanager.version>3.6.1</webdrivermanager.version>
 	</properties>
 
 	<dependencies>
-		
+
 		<!-- TestNG -->
-		 <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>${testng.version}</version>
-        </dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+		</dependency>
 
 		<!-- JUnit 4 -->
-		<!-- <dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
-		</dependency> -->
+		<!-- <dependency> <groupId>junit</groupId> <artifactId>junit</artifactId> 
+			<version>${junit.version}</version> </dependency> -->
 
 		<!-- This dependency isn't required but I like to use AssertJ for writing 
 			assertions. -->
@@ -56,6 +54,16 @@
 			<version>${selenium.version}</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
 
 		<!-- We need this dependency because our tests use Chrome -->
 		<dependency>
@@ -71,14 +79,20 @@
 			<version>${selenium.version}</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-firefox-driver</artifactId>
 			<version>${selenium.version}</version>
 			<scope>test</scope>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>${webdrivermanager.version}</version>
+		</dependency>
+
 		<!-- Apache log4j -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
@@ -92,7 +106,7 @@
 			<version>${log4j.version}</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 	</dependencies>
 	<build>
 		<plugins>

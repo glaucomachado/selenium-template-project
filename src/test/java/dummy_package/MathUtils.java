@@ -1,7 +1,7 @@
 package dummy_package;
 
 /**
- * @author glauco at @date 10:03:58
+ * @author Glauco Machado
  * 
  */
 public class MathUtils {

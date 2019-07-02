@@ -5,10 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 /**
- * @author glauco at @date 10:53:51
+ * @author Glauco Machado
  * 
  */
-public class GoogleHomePage extends PageObject {
+public class GoogleHomePage extends BasePage {
 
     private WebElement q = driver.findElement(By.name("q"));
     
